@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dijkstra Visualiser</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Dijkstra's Algorithm Visualiser</h1>
+    <div class="controls">
+        <button onclick="startDijkstra()">Start</button>
+        <button onclick="resetGrid()">Reset</button>
+        <button onclick="setDrawingMode('wall')">Draw Walls</button>
+        <button onclick="setDrawingMode('erase')">Erase Walls</button>
+        <button onclick="clearPathOnly()">Clear Path</button>
+    </div>
+    <div id="legend">
+    <div><span class="cell legend start"></span> Start</div>
+    <div><span class="cell legend end"></span> End</div>
+    <div><span class="cell legend wall"></span> Wall</div>
+    <div><span class="cell legend visited"></span> Visited</div>
+    <div><span class="cell legend path"></span> Shortest Path</div>
+    </div>
+
+    <div id="grid-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
